@@ -28,11 +28,11 @@ function App() {
             <div className='nom' >
                 <p>Nom</p>
                 <input type="text" />
-            </div>
+            </div> 
 
     </div>
+              <div><p className='p3'>email</p> </div>
             <div className='email'>
-              <p className='p3'>email</p> 
               <input type="email" name="" id="" />
             </div>
 
