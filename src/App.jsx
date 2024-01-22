@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -15,20 +14,20 @@ function App() {
             <p id='p1'>
               Créer un compte
                    <p id='p2'>
-                   Déja un compte ? Se connecter  
+                   Déja un compte ? Se connecter
                    </p>
             </p>
     </div>
     <div className='divNom'>
             <div className='prenom' >
-                <p>Prénom</p> 
+                <p>Prénom</p>
                 <input type="text" />
             </div>
-            
+
             <div className='nom' >
                 <p>Nom</p>
                 <input type="text" />
-            </div> 
+            </div>
 
     </div>
               <div><p className='p3'>email</p> </div>
@@ -38,11 +37,11 @@ function App() {
 
     <div className='divNom'>
             <div className='prenom' >
-                <p>Mot de passe</p> 
+                <p>Mot de passe</p>
                 <input type="password" name="" id="" />
             <input type="checkbox" name="" id="checkbox" />
             </div>
-            
+
             <div className='nom' >
                 <p>Confirmer mot de passe</p>
                 <input type="password" name="" id="" /> <br /> <br />
