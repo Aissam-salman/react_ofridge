@@ -1,0 +1,666 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+@media screen and (min-width: 1400px) {
+
+
+
+  .containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding: 0rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .bottom-left {
+    margin-right: auto;
+  }
+
+  .logoSocial {
+    margin-left: 7rem;
+    gap: 20px
+  }
+
+  .copyright {
+    margin-left: auto;
+
+  }
+
+  h3 {
+    padding-right: 9rem;
+  }
+
+  h2 {
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-left: 6rem;
+  }
+
+
+  h1 {
+    font-size: 2vw;
+  }
+
+
+
+  .hidden {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden2 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+
+  .hidden3 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden4 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden5 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden6 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -6vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerHeader {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.top-left {
+  align-self: flex-start;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1.25rem;
+  margin-left: 2.10rem;
+}
+
+.button {
+  background: var(--bleu-nuit, #081732);
+  width: 6vw;
+  height: 0.40vw;
+  flex-shrink: 0;
+  outline: none;
+  border: none;
+  margin-bottom: 0.30vw;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  /* Utilisation de 'transform' au lieu de 'width' pour l'animation */
+}
+
+.button:hover {
+  background-color: red;
+  transform: scaleX(2);
+  /* Allongement de 30% uniquement pour le bouton survolé */
+  cursor: pointer;
+
+}
+
+.button:not(:hover) {
+  transform-origin: center;
+  /* Ajustement pour éviter que les autres boutons ne bougent */
+}
+
+
+
+/* Style pour le texte caché */
+.button-container:hover .hidden {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+
+/* Style pour le texte caché */
+.button-container2:hover .hidden2 {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden2 {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container2 {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+.button-container3:hover .hidden3 {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden3 {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container3 {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+.button-container4:hover .hidden4 {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden4 {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container4 {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+.button-container5:hover .hidden5 {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden5 {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container5 {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+.button-container6:hover .hidden6 {
+  display: inline-block;
+  /* Au survol, afficher le texte en ligne à gauche du bouton */
+}
+
+.hidden6 {
+  display: none;
+  /* Initialement caché */
+  position: absolute;
+  top: 70%;
+  left: -7.5vw;
+  /* Déplace le texte à 5vw à gauche du bouton */
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: #C4C91C;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  font-family: Zilla Slab Highlight, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.button-container6 {
+  position: relative;
+  display: inline-block;
+  /* Permet au conteneur de s'ajuster à la taille du bouton */
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scaleX(1);
+  }
+
+  50% {
+    transform: scaleX(1.3);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rem;
+  margin-top: 1.2rem;
+}
+
+
+.containerFooter {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* Aligne les éléments en bas */
+  margin-top: 22rem;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-left: 5rem;
+}
+
+.logoSocial {
+  display: flex;
+  align-items: center;
+  margin-right: 16rem;
+}
+
+h3 {
+  color: #5C5C5C;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+ 
+  letter-spacing: 0.1px;
+  padding-top: 5rem;
+  margin-left: 5rem;
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 600px) {
+  .top-left {
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+
+  h2 {
+
+    font-size: 4vw;
+    margin-top: 24rem;
+    margin-left: 5rem;
+
+  }
+
+  .button {
+    width: 7vw;
+    height: 0.60vw;
+    margin-bottom: 0vw;
+  }
+
+  .menu {
+    margin-left: 0;
+    /* Ajustement pour coller le menu à gauche */
+  }
+
+
+
+  .hidden {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden2 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden3 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden4 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden5 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .hidden6 {
+    display: none;
+    /* Initialement caché */
+    position: absolute;
+    top: 60%;
+    left: -10vw;
+    /* Déplace le texte à 5vw à gauche du bouton */
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: #C4C91C;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+    font-family: Zilla Slab Highlight, sans-serif;
+    font-size: 6px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+
+
+
+
+
+
+  .containerFooter {
+    margin-top: 0;
+    /* Réinitialiser la marge en haut pour éviter un grand espace */
+  }
+
+  h2 {
+    font-size: 16px;
+    /* Taille de police fixe pour les petits écrans */
+    margin-left: 0;
+    /* Réinitialiser la marge à gauche */
+  }
+
+  .logoSocial {
+    margin-bottom: 0;
+    /* Réinitialiser la marge basse */
+  }
+
+  h3 {
+    font-size: 10px;
+    /* Taille de police fixe pour les petits écrans */
+    padding-top: 0.5rem;
+    /* Réduire l'espace en haut */
+  }
+
+
+}
+
+
+
+

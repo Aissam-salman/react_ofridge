@@ -1,0 +1,43 @@
+
+.containerHeader {
+  display: flex;
+  margin-bottom : 10rem;
+  
+
+  
+}
+
+.top-left {
+
+  align-self: flex-start;
+  
+
+}
+
+h1 {
+
+  color: #000000;
+  font-family: Poppins;
+  font-size: 27.333px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  z-index: 1;
+
+}
+
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */

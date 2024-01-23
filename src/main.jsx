@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// import './Header.css'
+// import Header from './header.jsx'
+import BackGround from './backgroundApp.jsx'
+import './backgroundAppCss.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+
+ReactDOM.createRoot(document.getElementById('backgroundBody')).render(
   <React.StrictMode>
-    <App />
+    <BackGround />
   </React.StrictMode>,
 )
