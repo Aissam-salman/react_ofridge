@@ -2,7 +2,7 @@ import "/src/style/link.css"
 import { useHover } from "@uidotdev/usehooks";
 
 
-export function Link({keys, name, link}){
+export function NavLink({keys, name, link}){
 
     const [ref, hovering] = useHover();
     const backgroundColor = hovering

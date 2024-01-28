@@ -26,7 +26,7 @@ export function Header(){
             link: "/account"
         },
         {
-            name: "MENU",
+            name: "HOME",
             link: "/"
         }
     ]
