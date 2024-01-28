@@ -1,0 +1,27 @@
+.link__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.link__name {
+    margin-bottom: 1.3rem;
+}
+
+.link__name a {
+    color: var(--secondary-color, #E0224A);
+    font-family: "Zilla Slab Highlight";
+    font-size: 1.rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link__bar {
+    width: 65px;
+    height: 7px;
+    margin-left: 15px;
+    margin-bottom: 18px;
+    background: var(--third-color);
+    transition: .3 ease;
+}

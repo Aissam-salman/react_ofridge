@@ -1,35 +1,51 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import SearchInput from './components/forms/SearchInput.jsx';
+import axios from 'axios';
+import { Header } from './components/header/Header.jsx';
+import { SectionTitle } from './components/title/SectionTitle.jsx';
+import { ProductCard } from './components/product/ProductCard.jsx';
+import { createBrowserRouter } from 'react-router-dom';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <div> Page Accueil</div>
+  }
+]);
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [product, setProduct] = useState(null); // Mettez à jour pour gérer un seul produit
+
+  const fetchData = async (searchTerm) => {
+    try {
+      const response = await axios.get(`http://127.0.0.1:8000/product/${searchTerm}`, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const data = response.data;
+      console.log(data);
+      setProduct(data);
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setProduct(null);
+    }
+  };
 
   return (
     <>
+      <Header />
+      <SearchInput onSearch={fetchData} />
+      <SectionTitle title="Top ingredients" />
+      <section>
+        <ProductCard />
+      </section>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        {product && JSON.stringify(product.products)}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
