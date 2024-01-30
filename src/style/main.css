@@ -1,0 +1,18 @@
+:root {
+    background: var(--green-clair, #C4C91C);
+    font-family: 'Poppins';
+    font-size: 16px;
+    line-height: 1;
+    --primary-color: #C4C91C;
+    --secondary-color: #E0224A;
+    --third-color: #081732;
+    --fourth-color: #1A3848;
+    --five-color: #1F5E31;
+    --Light-Colors-White: #FFF;
+    --radius: 0.625rem;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

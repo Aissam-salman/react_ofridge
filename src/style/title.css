@@ -1,0 +1,7 @@
+.section__title {
+    color: var(--Light-Colors-White, #FFF);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
